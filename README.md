@@ -8,7 +8,7 @@ This documents brings a code standard to Lua projects. In my GitHub, in reposito
 
 *Maximum line size is 80 characters*.
 
-Every line MUST end with ';' character. The exception is when a function, 'for' or 'if', are wrote in single line, like:
+Every line MUST end with ';' character. The exception is when a function, 'for' or 'if', are wrote in single line or a wrapped line, like:
 ```lua
 local variable = "anything";
 Tb = {};
