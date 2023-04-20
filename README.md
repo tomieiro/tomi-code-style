@@ -108,8 +108,23 @@ end
 
 ## Comments
 
-Single-line comments could be written using '--' key. Multi-line ones (Do not pretend that are single-line comments together, is a multi-line!) MUST be written in block, using '--[[' and '--]]' keys.
+Single-line comments could be written using '--' key.
 
+Multi-line ones (Do not pretend that are single-line comments together, is a multi-line!) MUST be written in block, using '--[[' and '--]]' keys.
+
+```lua
+-- This is a single-line comment! So alone...
+local a = "25 years";
+
+--[[
+This function will be awesome!
+parameters: (int) a, (string) b
+return: (int) 20
+--]]
+function awe(a, b)
+    return 20;
+end
+```
 
 ## Imports and Filenames
 
