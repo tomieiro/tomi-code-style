@@ -10,7 +10,7 @@ This documents brings a code standard to Lua projects. In my GitHub, in reposito
 
 Every line MUST end with ';' character. The exception is when a function, 'for' or 'if', are wrote in single line, like:
 ```lua
-local variable = "anything"
+local variable = "anything";
 Tb = {};
 
 function one()
@@ -35,9 +35,9 @@ function checkJustOneMore() return false end
 
 local newVar = checkSomething() and
     checkAnotherThing() and
-    checkJustOneMore()
+    checkJustOneMore();
 
-print(newVar)
+print(newVar);
 
 ```
 
@@ -76,4 +76,32 @@ Note that, third and fourth variables could be faced like global variables to th
 
 ### Functions
 
-Function follow the same pattern to names of variables. The
+Functions follow the same pattern to names of variables. Just particular case is when the function is part of a table (in other words, method in a class, or a function in a table) the name always be written with the first word in lowercase and following words capitalized. Like:
+
+```lua
+function Bee()
+    return "zzzz";
+end
+
+local function ant()
+    return "crop crop";
+end
+
+ClassA = {}
+local classB = {}
+
+function ClassA:getNumber()
+    return 4;
+end
+
+function classB:getNumber()
+    return 5;
+end
+
+SimpleTable = {}
+
+function SimpleTable.getAnotherNumber()
+    return 8;
+end
+
+```
