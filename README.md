@@ -105,3 +105,22 @@ function SimpleTable.getAnotherNumber()
 end
 
 ```
+
+## Comments
+
+Single-line comments could be written using '--' key. Multi-line ones (Do not pretend that are single-line comments together, is a multi-line!) MUST be written in block, using '--[[' and '--]]' keys.
+
+
+## Imports and Filenames
+
+All files must be named all words capitalized.
+
+Leave all 'requires' in file beginning, and in alphabetical order.
+
+Filename: Script.lua
+
+```lua
+require "LibA";
+LibB = require "LibB";
+local libC = require "LibC";
+```
